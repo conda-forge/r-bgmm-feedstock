@@ -14,9 +14,9 @@ source:
   sha256: e80270fdd1352f587cc08985f505611ee4dc7c9162a0b3b003f4d2efa5c41a26
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -53,8 +53,7 @@ about:
     Package bgmm: Mixture Modeling with Uncertain Knowledge, Journal of Statistical
     Software  <doi:10.18637/jss.v047.i03>.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
