@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: bgmm_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/bgmm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bgmm/bgmm_{{ version }}.tar.gz
@@ -54,10 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - dpryan79
     - nick-youngblut
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
