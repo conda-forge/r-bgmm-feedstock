@@ -5,11 +5,9 @@ Home: http://bgmm.molgen.mpg.de/
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bgmm-feedstock/blob/master/LICENSE.txt)
 
 Summary: Two partially supervised mixture modeling methods:  soft-label and belief-based modeling are implemented. For completeness, we equipped the package also with the functionality of unsupervised, semi- and fully supervised mixture modeling.  The package can be applied also to selection of the best-fitting from a set of models with different component numbers or constraints on their structures. For detailed introduction see: Przemyslaw Biecek, Ewa Szczurek, Martin Vingron, Jerzy Tiuryn (2012), The R Package bgmm: Mixture Modeling with Uncertain Knowledge, Journal of Statistical Software  <doi:10.18637/jss.v047.i03>.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-bgmm` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-bgmm` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
