@@ -3,7 +3,7 @@ About r-bgmm
 
 Home: http://bgmm.molgen.mpg.de/
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bgmm-feedstock/blob/master/LICENSE.txt)
 
